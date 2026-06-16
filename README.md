@@ -1,2 +1,0 @@
-# Liibaan
-Qufulka jacaylka
