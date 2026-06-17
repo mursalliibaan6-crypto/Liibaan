@@ -1,0 +1,265 @@
+/* CSS-ka Qurxinta Website-ka */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Sticky ah */
+.sticky-header {
+    background-color: #514;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Intro Card */
+.intro-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.intro-card h1 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.intro-card p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+/* Xirfadaha (Skills) */
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+    position: relative;
+}
+
+.skills-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007BFF;
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+    border-bottom: 4px solid #ccc;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+.skill-box i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.html-box { border-bottom-color: #e34c26; color: #e34c26; }
+.css-box { border-bottom-color: #264de4; color: #264de4; }
+.py-box { border-bottom-color: #3776ab; color: #3776ab; }
+
+.skill-box h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Qaybta Xiriirka weyn */
+.contact-wrapper {
+    margin-top: 5px;
+}
+
+.contact-wrapper h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-desc {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Grid-ka labada Border */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Sanduuqa Gmail-ka */
+.gmail-box-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.gmail-box-container h3 {
+    margin-bottom: 20px;
+    color: #007BFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Sanduuqa WhatsApp-ka */
+.whatsapp-box-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.whatsapp-box-container h3 {
+    margin-bottom: 15px;
+    color: #25D366;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-box-container p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Habeynta Foomka */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+    font-size: 14px;
+}
+
+.main-form input, .main-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+    
+}
+
+/* Koodhkan wuxuu xarfaha ka dhigayaa weyn kaliya sanduuqa Magaca */
+#name {
+    text-transform: capitalize;
+}
+
+
+.main-form input:focus, .main-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Badhanka Gmail-ka */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Badhanka WhatsApp-ka */
+.whatsapp-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+    font-size: 14px;
+    margin-top: 40px;
+}
